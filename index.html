@@ -791,8 +791,10 @@
       document.getElementById('nom').focus();
       return;
     }
-    // Ici : appel doPost Google Apps Script
-    // fetch('URL_APPS_SCRIPT', { method:'POST', body: new FormData(this) })
+    fetch('https://script.google.com/macros/s/AKfycbxklb8CR_sZmfzdiwEw3hyzJsJuWliPhnvoOn5fWbKk-3kOCHzUcUBI3c2NI1_bS_Mo/exec', {
+      method: 'POST',
+      body: new FormData(this)
+    });
     document.getElementById('success').style.display = 'block';
     document.querySelector('.btn-submit').style.display = 'none';
     document.getElementById('success').scrollIntoView({ behavior: 'smooth', block: 'center' });

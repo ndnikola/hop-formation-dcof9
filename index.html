@@ -29,22 +29,20 @@
 
     /* ── HEADER ── */
     header {
-      background: var(--marine);
-      padding: 18px 24px;
+      background: #ffffff;
+      padding: 12px 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
       gap: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
-    .header-brand {
-      font-family: 'Poppins', sans-serif;
-      font-weight: 700;
-      font-size: 20px;
-      color: var(--blanc);
-      letter-spacing: 0.02em;
+    .header-brand img {
+      height: 75px;
+      width: auto;
+      display: block;
     }
-    .header-brand span { color: var(--vert); }
     .header-tag {
       background: var(--vert);
       color: var(--blanc);
@@ -452,7 +450,9 @@
 
 <!-- HEADER -->
 <header>
-  <div class="header-brand">HOP<span>'</span> Formation</div>
+  <div class="header-brand">
+    <img src="https://www.hopformation.com/wph/wp-content/uploads/2025/11/Logo-HOPFormation.png" alt="HOP' Formation">
+  </div>
   <div class="header-tag">Formation professionnelle</div>
 </header>
 
